@@ -1,0 +1,3 @@
+SUPPORTED_FILE_FORMATS = ['.mp3', '.wav']
+MUSIC_FILES_LOCATION = 'data/music/'
+INITIAL_VOLUME = .4
