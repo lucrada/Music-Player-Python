@@ -1,6 +1,6 @@
 # Music-Player-Python
 
-A simple **music player** written in python with **tkinter** and **pygame**.
+A simple **music player** written in python(3.10.1) with **tkinter** and **pygame**.
 
 ## Screenshot
 
