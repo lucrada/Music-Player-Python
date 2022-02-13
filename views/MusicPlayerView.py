@@ -14,6 +14,7 @@ class MusicPlayerView(View):
         
         self.__root = Tk()
         self.__root.title('Music Player')
+        self.__root.iconphoto(False, PhotoImage(file='assets/icons/icon.png'))
         self.__root.resizable(False, False)
 
         self.__totalDuration = 0
