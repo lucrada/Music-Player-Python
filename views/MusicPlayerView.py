@@ -42,7 +42,7 @@ class MusicPlayerView(View):
         self.__totalDurationTextOptions = {}
         self.__songNameTextOptions = {}
         self.__volumeScaleOptions = {
-            'label': 'Volume 🔈:',
+            'label': 'Volume:',
             'showvalue': 0,
             'sliderlength': 8,
             'width': 8,
@@ -166,43 +166,43 @@ class MusicPlayerView(View):
         buttonColumn = Frame(self.__container)
 
         addButton = Button(buttonColumn, 
-        text="✚ Add", 
+        text="Add", 
         command=lambda: self.__controller.add(filedialog), 
         **self.__addButtonOptions
         )
         
         removeButton = Button(buttonColumn, 
-        text="✖ Remove", 
+        text="Remove", 
         command=lambda: self.__controller.remove(self.__musicList.curselection()),
         **self.__removeButtonOptions
         )
 
         prevButton = Button(self.__root, 
-        text='⏪', 
+        text='Prev', 
         command=self.__controller.prev,
         **self.__changeButtonOptions
         )
 
         nextButton = Button(self.__root, 
-        text='⏩', 
+        text='Next', 
         command=self.__controller.next,
         **self.__changeButtonOptions
         )
 
         playButton = Button(self.__root, 
-        text='▶', 
+        text='Play', 
         command=self.__controller.play,
         **self.__playButtonOptions
         )
 
         pauseButton = Button(self.__root, 
-        text='❚❚', 
+        text='Pause', 
         command=self.__controller.pause,
         **self.__pauseButtonOptions
         )
 
         stopButton = Button(self.__root, 
-        text='■', 
+        text='Stop', 
         command=self.__controller.stop,
         **self.__stopButtonOptions
         )
@@ -241,7 +241,7 @@ class MusicPlayerView(View):
         if self.__songName is not None:
             self.__songName.set('Song Name: ' + songName)
         if self.__repeatText is not None:
-            self.__repeatText.set('⟳ ' + repeatText)
+            self.__repeatText.set('Repeat: ' + repeatText)
 
         if len(musicList) == 0:
             self.__musicList.delete(0, END)

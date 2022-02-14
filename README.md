@@ -14,5 +14,3 @@ A simple **music player** written in python(3.10.1) with **tkinter** and **pygam
 - Increase/decrease volume
 - Control the progress of currently playing music with the seekbar
 - Enable/disable looping
-
-> **Note:** Tested only on windows
