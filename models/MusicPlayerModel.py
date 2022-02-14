@@ -174,5 +174,6 @@ class MusicPlayerModel:
     def terminateThreads(self):
         if mixer.get_busy():
             mixer.stop()
+            mixer.unload()
         self.__timeCounter.resetCounter()
         self.__endEventListener.terminateListener()

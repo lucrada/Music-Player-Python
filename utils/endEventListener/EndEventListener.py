@@ -1,3 +1,6 @@
+# The end event listener runs parallel with the main program
+# It checks if the currently playing music has come to an end
+
 from threading import Thread
 
 class EndEventListener:

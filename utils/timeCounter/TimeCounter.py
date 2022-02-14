@@ -1,3 +1,6 @@
+# Time counter keeps track of the duration of the currently playing music
+# and update the view accordingly
+
 from threading import Thread
 import time
 
